@@ -37,6 +37,14 @@ const init = () => {
       team.printInfo();
       console.log(team.getOffice());
 
+    //   const team = new Engineer(answers.name, 48, answers.email, answers.github);
+    //   team.printInfo();
+    //   console.log(team.getgithub());
+
+    //   const team = new intern(answers.name,100, answers.email, answers.school);
+    //   team.printInfo();
+    //   console.log(team.getschool());
+
       // pass team to page-template.js here & save to variable
       // call writeFileAsync, passing in varbiale from line 39
     })
@@ -70,56 +78,58 @@ const promptUser = () => {
       name: "add",
       message: "add another employee?",
     },
-    {
-      type: "input",
-      name: "role",
-      message: "What is your title?",
-    },
-    {
-      type: "input",
-      name: "name",
-      message: "What is your name?",
-    },
-    {
-      type: "input",
-      name: "email",
-      message: "What is your email?",
-    },
-    {
-      type: "input",
-      name: "github",
-      message: "What is your github username?",
-    },
-    {
-      type: "confirm",
-      name: "add",
-      message: "add another employee?",
-    },
-    {
-      type: "input",
-      name: "role",
-      message: "What is your title?",
-    },
-    {
-      type: "input",
-      name: "name",
-      message: "What is your name?",
-    },
-    {
-      type: "input",
-      name: "email",
-      message: "What is your email?",
-    },
-    {
-      type: "input",
-      name: "office",
-      message: "Where do you go to School?",
-    },
-    {
-      type: "confirm",
-      name: "add",
-      message: "add another employee?",
-    },
+    
+
+//     {
+//       type: "input",
+//       name: "role",
+//       message: "What is your title?",
+//     },
+//     {
+//       type: "input",
+//       name: "name",
+//       message: "What is your name?",
+//     },
+//     {
+//       type: "input",
+//       name: "email",
+//       message: "What is your email?",
+//     },
+//     {
+//       type: "input",
+//       name: "github",
+//       message: "What is your github username?",
+//     },
+//     {
+//       type: "confirm",
+//       name: "add",
+//       message: "add another employee?",
+//     },
+//     {
+//       type: "input",
+//       name: "role",
+//       message: "What is your title?",
+//     },
+//     {
+//       type: "input",
+//       name: "name",
+//       message: "What is your name?",
+//     },
+//     {
+//       type: "input",
+//       name: "email",
+//       message: "What is your email?",
+//     },
+//     {
+//       type: "input",
+//       name: "office",
+//       message: "Where do you go to School?",
+//     },
+//     {
+//       type: "confirm",
+//       name: "add",
+//       message: "add another employee?",
+//     },
   ]);
 };
 init();
