@@ -17,7 +17,7 @@ const fs = require("fs");
 const util = require("util");
 const Manager = require("./lib/manager");
 // create writeFile function using promises instead of a callback function
-
+const team = [];
 // const generateHTML = require("./generateHTML.js");
 const writeFileAsync = util.promisify(fs.writeFile);
 // TODO: Create an array of questions for user input
@@ -33,17 +33,16 @@ const init = () => {
     //   .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
     // .then((answers) => console.log(answers))
     .then((answers) => {
-      const team = new Manager(answers.name, 44, answers.email, answers.office);
-      team.printInfo();
-      console.log(team.getOffice());
+      team.push(new Manager(answers.name, 44, answers.email, answers.office)) 
+        // new Engineer(answers.name, 48, answers.email, answers.github),
+        // new intern(answers.name,100, answers.email, answers.school)];
 
-    //   const team = new Engineer(answers.name, 48, answers.email, answers.github);
-    //   team.printInfo();
-    //   console.log(team.getgithub());
+      // team.printInfo();
+      console.log(team);
+      // console.log(team.getGitHub());
+      // console.log(team, getSchool());
 
-    //   const team = new intern(answers.name,100, answers.email, answers.school);
-    //   team.printInfo();
-    //   console.log(team.getschool());
+    
 
       // pass team to page-template.js here & save to variable
       // call writeFileAsync, passing in varbiale from line 39
@@ -80,56 +79,56 @@ const promptUser = () => {
     },
     
 
-//     {
-//       type: "input",
-//       name: "role",
-//       message: "What is your title?",
-//     },
-//     {
-//       type: "input",
-//       name: "name",
-//       message: "What is your name?",
-//     },
-//     {
-//       type: "input",
-//       name: "email",
-//       message: "What is your email?",
-//     },
-//     {
-//       type: "input",
-//       name: "github",
-//       message: "What is your github username?",
-//     },
-//     {
-//       type: "confirm",
-//       name: "add",
-//       message: "add another employee?",
-//     },
-//     {
-//       type: "input",
-//       name: "role",
-//       message: "What is your title?",
-//     },
-//     {
-//       type: "input",
-//       name: "name",
-//       message: "What is your name?",
-//     },
-//     {
-//       type: "input",
-//       name: "email",
-//       message: "What is your email?",
-//     },
-//     {
-//       type: "input",
-//       name: "office",
-//       message: "Where do you go to School?",
-//     },
-//     {
-//       type: "confirm",
-//       name: "add",
-//       message: "add another employee?",
-//     },
+    // {
+    //   type: "input",
+    //   name: "role",
+    //   message: "What is your title?",
+    // },
+    // {
+    //   type: "input",
+    //   name: "name",
+    //   message: "What is your name?",
+    // },
+    // {
+    //   type: "input",
+    //   name: "email",
+    //   message: "What is your email?",
+    // },
+    // {
+    //   type: "input",
+    //   name: "github",
+    //   message: "What is your github username?",
+    // },
+    // {
+    //   type: "confirm",
+    //   name: "add",
+    //   message: "add another employee?",
+    // },
+    // {
+    //   type: "input",
+    //   name: "role",
+    //   message: "What is your title?",
+    // },
+    // {
+    //   type: "input",
+    //   name: "name",
+    //   message: "What is your name?",
+    // },
+    // {
+    //   type: "input",
+    //   name: "email",
+    //   message: "What is your email?",
+    // },
+    // {
+    //   type: "input",
+    //   name: "office",
+    //   message: "Where do you go to School?",
+    // },
+    // {
+    //   type: "confirm",
+    //   name: "add",
+    //   message: "add another employee?",
+    // },
   ]);
 };
 init();
