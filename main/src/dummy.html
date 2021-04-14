@@ -1,16 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <title>My team</title>
+  </head>
 
-    your method goes here.  make it here and copy and past it into the return function.  the cards of manager, intern and engineer goes here.
-    ${somefunction(team)}
-</body>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 mb-3 jumbotron">
+          <h1 class="text-center">My Team</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <!-- <div class = "card-deck"> -->
+      <div class="row">
+        <div class="card employee">
+          <div class="card-header">
+            <h2 class="card-title">Daniel</h2>
+            <h3 class="card-title">Manager</h3>
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">id: 8888</li>
+              <li class="list-group-item">email: unknown@gmail.com</li>
+              <li class="list-group-item">office number: 3</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card employee">
+            <div class="card-header">
+              <h2 class="card-title">Mike</h2>
+              <h3 class="card-title">Engineer</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item">id: 844</li>
+                <li class="list-group-item">email: unknown@gmail.com</li>
+                <li class="list-group-item">GitHub: Mike34</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card employee">
+            <div class="card-header">
+              <h2 class="card-title">Baker</h2>
+              <h3 class="card-title">Engineer</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item">id: 847</li>
+                <li class="list-group-item">email: unknown@gmail.com</li>
+                <li class="list-group-item">GitHub: Baker16</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="card employee">
+          <div class="card-header">
+            <h2 class="card-title">Melissa</h2>
+            <h3 class="card-title">Engineer</h3>
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">id: 834</li>
+              <li class="list-group-item">email: melissa@gmail.com</li>
+              <li class="list-group-item">GitHub: Melissa54</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card employee">
+            <div class="card-header">
+              <h2 class="card-title">Dawn</h2>
+              <h3 class="card-title">intern</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item">id: 1000</li>
+                <li class="list-group-item">email: dawn@gmail.com</li>
+                <li class="list-group-item">School: GACollege</li>
+              </ul>
+            </div>
+          </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div> -->
+    <!-- <div class="card-deck">
+        <div class="card bg-primary">
+          <div class="card-body text-center">
+           <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div> 
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the second card</p>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the third card</p>
+          </div>
+        </div> -->
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </html>
